@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# CONST
+APP_LOC=$(readlink -f `dirname $BASH_SOURCE[0]`)
+APP_DIR='/app'
+SCRIPT_NAME='init.py'
+CMD="${APP_DIR}/${SCRIPT_NAME}"
+
+# Functions
+launch_docker_compose()(
+   set -e
+   cd "${APP_LOC}" &&
+      docker compose run --rm pcap2flows "$@"
+)
+
+main(){
+	launch_docker_compose "$@"
+}
+
+main "$CMD"

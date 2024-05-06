@@ -1,0 +1,9 @@
+services:
+  pcap2flows:
+    container_name: pcap2flows
+    build: .
+    network_mode : none
+    volumes:
+      - $PWD/app:/app
+      - $PWD/captures:/app/captures
+      - $PWD/output:/app/output
