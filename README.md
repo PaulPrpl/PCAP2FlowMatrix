@@ -16,6 +16,6 @@
 <h3>Notes:</h3>
 <ul>
   <li>Credits to Scapy library that made this program core : <a href=https://github.com/secdev/scapy>scapy.net</a></li>
-  <li>This app uses Docker and <a href=https://hub.docker.com/r/opensuse/tumbleweed>OpenSUSE tumbleweed</a></li>
+  <li>This app uses Docker alongside Docker-Compose with <a href=https://hub.docker.com/r/opensuse/tumbleweed>OpenSUSE tumbleweed</a></li>
   <li>Provided script <code>pcap2flows</code> is written in bash and will not run without it on host.<br>You can use directly python otherwise</li>
 </ul>
